@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mb-60{
+  margin-bottom: 60px;
+}
+
+.background{
+  background-image: url(https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-johannes-plenio-1118873.jpg&fm=jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.responsive-bg-height {
+  height: calc(100% - 200px); /* Default height for small screens */
+}
+
+@media (min-width: 768px) {
+  .responsive-bg-height {
+    height: calc(100% - 56px); /* For md and up */
+  }
+}
+
+@media (min-width: 576px) {
+  .responsive-bg-height {
+    height: calc(100% - 112px); /* For md and up */
+  }
+}
+
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
+
+.blurry{
+  backdrop-filter: blur(7px);
+  box-shadow: 5px 5px 5px white;;
+}
+
+.water-loader {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #00bfff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.water-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #00bfff, #87cefa);
+  transform: translateY(100%);
+  animation: fillWater 2.5s ease-in-out infinite;
+}
+
+@keyframes fillWater {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
