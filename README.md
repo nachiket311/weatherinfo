@@ -4,7 +4,7 @@ This is a simple React project built using **Create React App (CRA)** and **Boot
 
 ## Live Demo
 
-**Deploying Soon**
+[Click here to view it live](https://nacs-weather-information.netlify.app/) 
 
 ## Tech Stack
 
@@ -15,7 +15,7 @@ This is a simple React project built using **Create React App (CRA)** and **Boot
 ## Installation (Run Locally)
 
 ```bash
-git clone **Add Link Here Soon ...**
+git clone https://github.com/nachiket311/weatherinfo.git
 cd weatherinfo
 npm install
 npm start
